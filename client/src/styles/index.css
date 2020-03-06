@@ -37,13 +37,12 @@
 /* Desktop and tablet (medium and huge) fonts */
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
 }
 
 .header {
   padding: 0 5rem;
-  background-color: #323232;
-  height: 80px;
+  height: 180px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,6 +87,83 @@ a {
 .form__select {
   width: 308px;
   height: 48px;
+}
+
+.result {
+  background-color: #def3f8;
+}
+
+.result__info {
+  padding: 100px 200px;
+}
+
+.result__data {
+  padding: 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.result__chart {
+  width: 100%;
+}
+
+.result__chart iframe {
+  width: 100%;
+}
+
+.result__first {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.result__second {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.result__third {
+  padding: 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.result__spanWrap {
+  height: 20px;
+  width: 100%;
+}
+
+.result__span1 {
+  padding: 0.2rem 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 40px;
+  height: 100%;
+  background-color: orange;
+}
+
+.result__span2 {
+  padding: 0.2rem 1rem;
+  width: 40px;
+  height: 100%;
+  background-color: green;
+}
+
+.result__span3 {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.2rem 1rem;
+  width: 40px;
+  height: 100%;
+  background-color: red;
 }
 
 body {

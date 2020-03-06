@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import data from "./models/data.json";
 import Header from "./components/header";
 import Forms from "./components/forms";
+import Result from "./components/result";
 
 class App extends React.Component {
   state = {};
@@ -14,6 +15,7 @@ class App extends React.Component {
     });
     return productArray;
   };
+
   render() {
     return (
       <Router>
@@ -37,6 +39,7 @@ class App extends React.Component {
               return (
                 <>
                   <Header />
+                  <Forms />
                 </>
               );
             }}
@@ -48,6 +51,7 @@ class App extends React.Component {
               return (
                 <>
                   <Header />
+                  <Result />
                 </>
               );
             }}
