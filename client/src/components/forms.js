@@ -4,11 +4,22 @@ import Woman from "../assets/home-corner.svg";
 
 export default class createNew extends React.Component {
   state = {
-    options: [{ value: "lifestyle", label: "lifestyle" }]
+    options: [{ value: "lifestyle", label: "llifestyle" }],
+    color: { color: "red" },
+    number: 500
   };
 
-  // window.alert("Successfully added product to inventory");
-  // event.target.reset();
+  componentDidMount() {
+    this.getColor();
+  }
+
+  getColor = () => {
+    if (this.state.number > 1000) {
+      this.setState({ color: { color: "green" } });
+    } else if (this.state.number > 200) {
+      this.setState({ color: { color: "yellow" } });
+    }
+  };
 
   render() {
     return (
