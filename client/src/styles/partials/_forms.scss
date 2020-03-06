@@ -1,11 +1,76 @@
-.form {
+.home {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  font-size: 2rem;
-  &__select {
+  flex-wrap: wrap;
+  margin: 6rem 0;
+  height: 100%;
+  color: #011db8;
+  overflow-y: hidden;
+
+  &__form {
+    padding-left: 216px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-select {
     width: 308px;
     height: 48px;
+    border-radius: 7px;
+  }
+
+  &__form-title {
+    @include form-text-small;
+  }
+
+  &__form-value {
+    width: 308px;
+    height: 48px;
+    border-radius: 7px;
+    border: 1px solid #000000;
+    padding-left: 8px;
+  }
+
+  &__form-button {
+    width: 308px;
+    height: 97px;
+    background-color: white;
+    border-radius: 7px;
+    border: none;
+    font-size: 40px;
+    line-height: 85px;
+    margin-top: 60px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    background-color: #8ce7fc;
+  }
+
+  &__right {
+    width: 50%;
+    border-left: 2px solid grey;
+    height: 100vh;
+  }
+
+  &__title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__right-title {
+    @include form-text-small;
+    text-decoration: underline;
+  }
+
+  &__woman-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  &__woman {
+    height: 432px;
+    width: 233px;
+    padding-right: 2rem;
   }
 }

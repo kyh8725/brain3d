@@ -1,40 +1,8 @@
 @font-face {
-  font-family: "avenir";
-  src: url("../assets/GlobalFont/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+  font-family: "poppins";
+  src: url("../assets/GlobalFont/Poppins/Poppins-Bold.ttf");
 }
 
-@font-face {
-  font-family: "avenir-thin";
-  src: url("../assets/GlobalFont/AvenirNextProLT/AvenirNextLTPro-Thin.otf");
-}
-
-@font-face {
-  font-family: "avenir-light";
-  src: url("../assets/GlobalFont/AvenirNextProLT/AvenirNextLTPro-Light.otf");
-}
-
-@font-face {
-  font-family: "avenir-med";
-  src: url("../assets/GlobalFont/AvenirNextProLT/AvenirNextLTPro-Medium.otf");
-}
-
-@font-face {
-  font-family: "avenir-demi";
-  src: url("../assets/GlobalFont/AvenirNextProLT/AvenirNextLTPro-Demi.otf");
-}
-
-@font-face {
-  font-family: "avenir-bold";
-  src: url("../assets/GlobalFont/AvenirNextProLT/AvenirNextLTPro-Bold.otf");
-}
-
-@font-face {
-  font-family: "avenir-bolder";
-  src: url("../assets/GlobalFont/AvenirNextProLT/AvenirNextLTPro-Heavy.otf");
-}
-
-/* Mobile (small) fonts */
-/* Desktop and tablet (medium and huge) fonts */
 a {
   text-decoration: none;
   color: #ffffff;
@@ -70,7 +38,21 @@ a {
   font-size: 1.5rem;
 }
 
-.form {
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 6rem 0;
+  height: 100%;
+  color: #011db8;
+  overflow-y: hidden;
+}
+
+.home__form {
+  padding-left: 216px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,20 +60,86 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2rem;
 }
 
-.form__select {
+.home__form-select {
   width: 308px;
   height: 48px;
+  border-radius: 7px;
+}
+
+.home__form-title {
+  font-size: 28px;
+  line-height: 42px;
+  font-family: "poppins";
+}
+
+.home__form-value {
+  width: 308px;
+  height: 48px;
+  border-radius: 7px;
+  border: 1px solid #000000;
+  padding-left: 8px;
+}
+
+.home__form-button {
+  width: 308px;
+  height: 97px;
+  background-color: white;
+  border-radius: 7px;
+  border: none;
+  font-size: 40px;
+  line-height: 85px;
+  margin-top: 60px;
+  -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  background-color: #8ce7fc;
+}
+
+.home__right {
+  width: 50%;
+  border-left: 2px solid grey;
+  height: 100vh;
+}
+
+.home__title-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__right-title {
+  font-size: 28px;
+  line-height: 42px;
+  font-family: "poppins";
+  text-decoration: underline;
+}
+
+.home__woman-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+
+.home__woman {
+  height: 432px;
+  width: 233px;
+  padding-right: 2rem;
 }
 
 body {
-  font-family: "avenir";
+  font-size: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
